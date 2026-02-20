@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict - Prosperity Prognosticator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-card">
+            <h2>Enter Startup Metrics</h2>
+            <form action="/result" method="POST">
+                <div class="form-group">
+                    <label>Number of Relationships</label>
+                    <input type="number" step="1" name="relationships" required>
+                </div>
+                <div class="form-group">
+                    <label>Funding Rounds</label>
+                    <input type="number" step="1" name="funding_rounds" required>
+                </div>
+                <div class="form-group">
+                    <label>Total Funding (USD)</label>
+                    <input type="number" step="0.01" name="funding_total_usd" required>
+                </div>
+                <div class="form-group">
+                    <label>Number of Milestones</label>
+                    <input type="number" step="1" name="milestones" required>
+                </div>
+                <div class="form-group">
+                    <label>Avg Participants per Round</label>
+                    <input type="number" step="0.1" name="avg_participants" required>
+                </div>
+                <div class="form-group">
+                    <label>Age (Years) at First Funding</label>
+                    <input type="number" step="0.1" name="age_first_funding_year" required>
+                </div>
+                <div class="form-group">
+                    <label>Age (Years) at Last Funding</label>
+                    <input type="number" step="0.1" name="age_last_funding_year" required>
+                </div>
+                <div class="form-group">
+                    <label>Age (Years) at First Milestone</label>
+                    <input type="number" step="0.1" name="age_first_milestone_year" required>
+                </div>
+                <div class="form-group">
+                    <label>Age (Years) at Last Milestone</label>
+                    <input type="number" step="0.1" name="age_last_milestone_year" required>
+                </div>
+                <button type="submit" class="btn">Predict Success</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
