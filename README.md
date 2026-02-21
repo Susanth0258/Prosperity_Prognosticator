@@ -4,8 +4,16 @@
 
 "Prosperity Prognosticator" is a Machine Learning-powered web application designed to forecast the outcome of startups. By analyzing key metrics like funding rounds, milestones, and relationships, the system predicts whether a startup is likely to be **Acquired (Success)** or **Closed (Failure)**.
 
-![Prosperity Prognosticator Header](https://via.placeholder.com/800x400?text=Prosperity+Prognosticator+App+Preview)
-*(Note: Replace this placeholder with an actual screenshot of your application)*
+### 🎥 Project Explanation
+A detailed explanation of the project can be found here: [Video Link](https://drive.google.com/file/d/1OdxKfiZAaOgUnQ_qyyTu6PyjKRUxQdFa/view?usp=sharing)
+
+### 🖥️ Application Preview
+
+#### Home Page
+![Home Page](Demo1.png)
+
+#### Prediction Page
+![Prediction Page](Demo2.png)
 
 ## ✨ Key Features
 - **AI-Driven accuracy**: Uses a robust Random Forest Classifier trained on historical startup data.
